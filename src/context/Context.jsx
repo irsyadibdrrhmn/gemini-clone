@@ -1,4 +1,4 @@
-import { useState } from "react"; // ✅ tambahkan useState
+import { useState } from "react"; 
 import runChat from "../config/gemini";
 
 import { Context } from "./ContextObject";
@@ -37,7 +37,7 @@ const ContextProvider = (props) => {
       response = await runChat(input);
     }
 
-    // ✅ pastikan response berupa string
+    
     let responseArray = response.split("**");
     let newResponse = "";
 

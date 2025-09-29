@@ -1,7 +1,7 @@
-import React, { useState, useContext } from "react"; // ✅ tambahkan useContext
+import React, { useState, useContext } from "react"; 
 import "./Sidebar.css";
 import { assets } from "../../assets/assets";
-import { Context } from "../../context/Context"; // ✅ tambahkan ini
+import { Context } from "../../context/Context"; 
 
 const Sidebar = () => {
   const [extended, setExtended] = useState(false);
