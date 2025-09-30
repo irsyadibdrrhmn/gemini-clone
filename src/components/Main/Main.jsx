@@ -23,19 +23,19 @@ const Main = () => {
             </div>
             <div className="cards">
               <div className="card">
-                <p>Lorem ipsum dolor sit amet...</p>
+                <p>Leads participants to the daily schedule, map, or next steps in the program...</p>
                 <img src={assets.compass_icon} alt="" />
               </div>
               <div className="card">
-                <p>Lorem ipsum dolor sit amet...</p>
+                <p>Provides inspiration, suggestions, or quick summaries of program content/materials...</p>
                 <img src={assets.bulb_icon} alt="" />
               </div>
               <div className="card">
-                <p>Lorem ipsum dolor sit amet...</p>
+                <p>A quick link for common questions or direct help from the organizers/admins...</p>
                 <img src={assets.message_icon} alt="" />
               </div>
               <div className="card">
-                <p>Lorem ipsum dolor sit amet...</p>
+                <p>Directs users to important links, technical documents, or required external platforms/tools...</p>
                 <img src={assets.code_icon} alt="" />
               </div>
             </div>
@@ -70,7 +70,7 @@ const Main = () => {
               <img onClick={() => onSent()} src={assets.send_icon} alt="" />
             </div>
           </div>
-          <p className="bottom-info">Lorem ipsum dolor sit amet consectetur...</p>
+          <p className="bottom-info">An interactive assistant to support Your Journey with KADA.</p>
         </div>
       </div>
     </div>
