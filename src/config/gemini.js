@@ -68,6 +68,7 @@ function detectPromptType(prompt) {
     lowerPrompt.includes("code") ||
     lowerPrompt.includes("program") ||
     lowerPrompt.includes("javascript") ||
+    lowerPrompt.includes("react") ||
     lowerPrompt.includes("css") ||
     lowerPrompt.includes("html")
   ) {
