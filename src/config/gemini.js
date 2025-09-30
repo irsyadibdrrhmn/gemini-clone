@@ -1,7 +1,3 @@
-// Simulated Gemini API for UI Development
-// Replace this with real API when billing is ready
-
-// Array of realistic responses for different types of prompts
 const simulatedResponses = {
   creator: [
     "**The person who made this Gemini clone is Irsyad Ibadurrahman.** *He built this* as a web application using React.js and integrated it with AI capabilities. *The project demonstrates* modern web development skills including state management, API integration, and responsive design. *It's a great example* of how to create AI-powered chat interfaces!",
@@ -50,11 +46,9 @@ const simulatedResponses = {
   ]
 };
 
-// Function to detect prompt type
 function detectPromptType(prompt) {
   const lowerPrompt = prompt.toLowerCase();
   
-  // Special case for creator question
   if (lowerPrompt.includes('who made this') || lowerPrompt.includes('who created this') || lowerPrompt.includes('who built this') || 
       lowerPrompt.includes('creator') || lowerPrompt.includes('developer') || lowerPrompt.includes('author')) {
     return 'creator';
