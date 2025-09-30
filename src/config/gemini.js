@@ -65,26 +65,24 @@ function detectPromptType(prompt) {
   }
 }
 
-// Function to get random response from category
 function getRandomResponse(category) {
   const responses = simulatedResponses[category];
   return responses[Math.floor(Math.random() * responses.length)];
 }
 
-// Main simulated function
 async function runChat(prompt) {
-  // Simulate network delay (realistic experience)
-  const delay = Math.random() * 2000 + 1000; // 1-3 seconds
+  
+  const delay = Math.random() * 2000 + 1000;
   await new Promise(resolve => setTimeout(resolve, delay));
   
   try {
-    // Detect what type of prompt this is
+    
     const promptType = detectPromptType(prompt);
     
-    // Get appropriate response
+    
     let response = getRandomResponse(promptType);
     
-    // Add some personalization based on the actual prompt
+    
     if (promptType !== 'greetings') {
       response += `\n\n*Regarding your specific question about "${prompt.slice(0, 50)}${prompt.length > 50 ? '...' : ''}"*, I hope this helps! Feel free to ask if you need more clarification or have follow-up questions.`;
     }
@@ -92,7 +90,7 @@ async function runChat(prompt) {
     return response;
     
   } catch (error) {
-    // Even simulation can have "errors" for testing
+    
     console.log("Simulated error (for testing):", error);
     return "I apologize, but I'm having trouble processing your request right now. Please try again in a moment.";
   }
